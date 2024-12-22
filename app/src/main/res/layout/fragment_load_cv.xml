@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TextFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="321dp"
+            android:layout_height="345dp"
+            android:layout_marginTop="100dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="262dp"
+                    android:contentDescription="@null"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/uploadfile" />
+
+                <RelativeLayout
+                    android:id="@+id/UploadCv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        android:padding="2dp"
+                        android:src="@drawable/baseline_auto_awesome_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="40dp"
+                        android:text="上传简历"
+                        android:textColor="@color/colorDarkText"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+                <net.penguincoders.aipainting.view.RoundedRectProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="0dp"
+                    app:backColor="@color/white"
+                    app:barColor="@color/purple_200"
+                    app:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/AnalyseBtn"
+            android:text="专属您的简历报告"
+            android:textSize="15sp"
+            android:textColor="@color/colorLight"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_btn_theme_pale_circle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

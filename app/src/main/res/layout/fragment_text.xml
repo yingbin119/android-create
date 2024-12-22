@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TextFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center">
+
+
+       <RelativeLayout
+           android:id="@+id/TextDescription"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:orientation="horizontal"
+           android:padding="12dp">
+
+           <ImageView
+               android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:layout_centerVertical="true"
+               android:contentDescription="@null"
+               android:padding="2dp"
+               android:src="@drawable/baseline_auto_awesome_24" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_gravity="center"
+               android:layout_marginLeft="40dp"
+               android:text="@string/description"
+               android:textColor="@color/colorDarkText"
+               android:textSize="18sp" />
+
+           <RelativeLayout
+               android:id="@+id/ClearBtn"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_marginStart="300dp">
+
+               <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:layout_centerVertical="true"
+                   android:contentDescription="@null"
+                   android:padding="0dp"
+                   android:src="@drawable/baseline_delete_24" />
+
+               <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                   <!--android:layout_height="wrap_content"-->
+                   <!--android:layout_alignParentEnd="true"-->
+                   <!--android:layout_centerVertical="true"-->
+                   <!-- android:text="清空"-->
+                   <!--android:textColor="@color/colorDarkText"-->
+                   <!--android:textSize="18sp" />-->
+
+           </RelativeLayout>
+
+       </RelativeLayout>
+
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="367dp"
+           android:layout_height="313dp"
+           android:layout_margin="16dp"
+           android:layout_weight="1"
+
+           app:cardCornerRadius="16dp"
+           app:cardElevation="8dp"
+           app:cardUseCompatPadding="false">
+
+           <EditText
+               android:id="@+id/InputText"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@null"
+               android:gravity="top|start"
+               android:hint="@string/hinttext"
+               android:padding="16dp"
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorDarkText"
+               android:textStyle="normal">
+
+           </EditText>
+       </androidx.cardview.widget.CardView>
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/fab"
+           android:layout_width="207dp"
+           android:layout_height="wrap_content"
+           android:layout_margin="16dp"
+           android:layout_marginRight="8dp"
+           android:backgroundTint="@color/colorBack"
+           android:contentDescription="draw"
+           android:src="@drawable/baseline_brush_24" />
+   </LinearLayout>
+</androidx.core.widget.NestedScrollView>

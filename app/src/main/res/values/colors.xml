@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="purple_200">#80c1fd</color>
+    <color name="Dark_Blue">#024877</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="holo_green_dark">#669900</color>
+    <color name="yellow">#FADF02</color>
+    <color name="colorPrimary">#FCD008</color>
+    <color name="colorPrimaryDark">#FCD008</color>
+    <color name="colorAccent">#FCD008</color>
+    <color name="colorTheme">#FCD008</color>
+    <color name="colorThemePale">#FDECA0</color>
+    <color name="colorDark">#000106</color>
+    <color name="colorLight">#FEFEFE</color>
+    <color name="colorBack">#F8F8F8</color>
+    <color name="colorBackPale">#FAFBFA</color>
+    <color name="colorText">#4C4C4C</color>
+    <color name="colorDarkText">#313131</color>
+    <color name="colorDefaultText">#A0A0A0</color>
+
+    <!--自定义进度条背景颜色-->
+    <color name="white_alpha">#0c000000</color>
+
+    <!--自定义进度条渐变颜色-->
+    <color name="progress_color_1">#ff916b</color>
+    <color name="progress_color_2">#ffa94c</color>
+
+
+    <color name="colorBotBarBack">#F7F7F7</color>
+    <color name="colorBotLine">#E5E5E5</color>
+    <color name="colorTopLine">#B1B1B1</color>
+
+    <color name="ThemeYellow">#FDAB2D</color>
+    <color name="ThemeGreen">#A9E3A9</color>
+    <color name="ThemeBlue">#4E9DED</color>
+    <color name="ThemePurple">#C8C8FF</color>
+    <color name="ThemeOrange">#FD8D56</color>
+    <color name="ThemeBlack">#4C4C4C</color>
+</resources>

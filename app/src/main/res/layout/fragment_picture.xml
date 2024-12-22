@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TextFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:id="@+id/TextDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:padding="12dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:padding="2dp"
+                android:src="@drawable/baseline_auto_awesome_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:text="上传图片："
+                android:textColor="@color/colorDarkText"
+                android:textSize="18sp" />
+            <RelativeLayout
+                android:id="@+id/ClearBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="300dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:padding="0dp"
+                    android:src="@drawable/baseline_delete_24" />
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!-- android:text="清空"-->
+                <!--android:textColor="@color/colorDarkText"-->
+                <!--android:textSize="18sp" />-->
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="341dp"
+            android:layout_height="414dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="false">
+
+                <ImageView
+                    android:id="@+id/Picture1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:padding="16dp"
+                    android:scaleType="fitXY"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/UploadPicture"
+                    android:layout_width="145dp"
+                    android:layout_height="138dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/baseline_add_a_photo_24"
+                    android:textColor="@android:color/black" />
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="344dp"
+            android:layout_height="147dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="false">
+
+            <EditText
+                android:id="@+id/InputText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorDarkText"
+                android:gravity="top|start"
+                android:hint="@string/hinttext"
+                android:textColorHint="@color/colorDefaultText"
+                android:padding="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorLight"
+                android:textStyle="normal">
+
+            </EditText>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/colorBack"
+            android:contentDescription="draw"
+            android:src="@drawable/baseline_brush_24" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
